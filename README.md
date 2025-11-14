@@ -1,48 +1,55 @@
-# 📌 WhatsApp Flight Booking Bot
+# ✈️WhatsApp Flight Booking Bot
 
-A conversational WhatsApp bot that allows users to search for the cheapest flights using natural language. The bot is built with Flask and integrates with the Twilio Messaging API for WhatsApp, the Aviation Stack API for real-time flight data, and the Hugging Face API for advanced natural language understanding. It offers both a guided, step-by-step conversation and the ability to process a complete flight request in a single message.
 
------
 
-## ✨ Features
+A simple and smart WhatsApp chatbot that helps users check real-time flight details and search for cheap flights using natural language messages.
+Built with Python (Flask), Twilio WhatsApp API, and AviationStack API, the bot can understand user queries, detect flight routes, and return the best available flights instantly.
 
-  - **Conversational Interface**: Interact with the bot on WhatsApp using natural language.
-  - **Flight Search**: Find the cheapest flights from a specified departure city to a destination.
-  - **AI-Powered NLU**: Leverages the Hugging Face API to understand complex queries and extract flight details like cities and passenger counts.
-  - **Step-by-Step Guidance**: Guides users through the booking process if a full request isn't provided.
-  - **City & Airport Matching**: Intelligent matching of city names to their corresponding IATA airport codes, including fuzzy matching for common misspellings or aliases.
-  - **Real-Time Data & Mock Fallback**: Fetches live flight data from the Aviation Stack API with a built-in mock data generator for reliability in case of API failures.
-  - **Booking Links**: Provides direct links to major booking sites (Skyscanner, Kayak, Expedia) for easy booking.
-  - **Health Check & Home Endpoints**: Includes `/health` and `/` endpoints for monitoring the application status.
+🚀 Features
 
------
+Chat-based flight search
+Users can simply text “Find flights from Delhi to Dubai” on WhatsApp.
 
-## 🛠️ Tech Stack
+AI understanding
+Extracts cities, date, and details from natural language messages.
 
-  - **Python**: The core programming language.
-  - **Flask**: A micro web framework for building the application.
-  - **Twilio**: The API for sending and receiving messages on WhatsApp.
-  - **Aviation Stack**: The API for fetching real-time flight data.
-  - **Hugging Face (DialoGPT-large)**: An AI model used for natural language understanding and context-aware responses.
-  - **Geopy**: A Python library to geocode addresses into coordinates (though its usage in the provided code is limited).
-  - **python-dotenv**: To manage environment variables securely.
-  - **Requests**: An HTTP library for making API calls.
-  - **Regex (`re`)**: For pattern-based extraction of flight details.
+Real-Time Flight Information
+Fetches flight prices and schedules using AviationStack API.
 
------
+Fallback mode
+If API fails, the bot uses sample/mock data to respond.
 
-## 📁 Folder Structure
+Easy booking links
+Direct links to Skyscanner, Kayak, etc.
 
-```
-project-root/
-├── .env
-├── main.py
+Status endpoints
+Includes / and /health for deployment checks.
+
+🧰 Tech Used
+
+Python + Flask – Backend
+
+Twilio WhatsApp API – Messaging
+
+AviationStack API – Live flight data
+
+HuggingFace API – Query understanding
+
+Requests / Regex – Data extraction
+
+dotenv – Secure environment variables
+
+📁 Project Structure
+project/
+├── app.py
+├── requirements.txt
+├── Procfile
+├── demo/
+│   └── demo.gif
 └── README.md
-```
 
------
 
-## 🚀 How to Run
+## How to Run
 
 ### 1\. Clone the Repository
 
@@ -93,13 +100,13 @@ You can now send a WhatsApp message to your Twilio number to start interacting w
 
 -----
 
-## 🎥 Demo
+## Demo
 
 ![Demo GIF](demo/demo.gif)
 
 -----
 
-## 👤 Author
+## Author
 
 **Manu JP**
 
