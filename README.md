@@ -101,7 +101,7 @@ You can now send a WhatsApp message to your Twilio number to start interacting w
 
 ## 👤 Author
 
-**Fahad Ali**
+**Manu JP**
 
-  - GitHub: [@FAHAD-ALI-github](https://github.com/FAHAD-ALI-github)
-  - LinkedIn: [fahadali1078](https://www.linkedin.com/in/fahadali1078/)
+  - GitHub: [@https://github.com/mj110805)
+  - LinkedIn: [https://www.linkedin.com/in/manu-jayaprakash-2a6a6527b)
